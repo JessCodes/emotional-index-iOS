@@ -97,7 +97,9 @@ extension ViewController {
                         if total == emotionTotals.values.max()
                         {
                             if emotion == "joy" {
+                                
                                 self.faceResults.text! = "you look like you're feeling joy"
+                                
                             }
                             else if emotion == "anger"
                             {
