@@ -6,18 +6,16 @@ use_frameworks!
 
   # Pods for emotional-index-iOS
 
-target ‘banana’ do
     pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON', '~> 3.1'
 end
 
-  target 'emotional-index-iOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'emotional-index-iOSTests' do
+  inherit! :search_paths
+  # Pods for testing
+end
 
-  target 'emotional-index-iOSUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+target 'emotional-index-iOSUITests' do
+  inherit! :search_paths
+  # Pods for testing
 end

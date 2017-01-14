@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C671167050ECA16D1A4DB89 /* libPods-emotional-index-iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F495F16703CF6AE386906436 /* libPods-emotional-index-iOSTests.a */; };
+		38364DA34A276CE71C2A77AF /* libPods-emotional-index-iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684FC48CFBE6C9379BBB226A /* libPods-emotional-index-iOSUITests.a */; };
 		C86D1D331E29D49100FE3D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D321E29D49100FE3D83 /* AppDelegate.swift */; };
 		C86D1D351E29D49100FE3D83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D341E29D49100FE3D83 /* ViewController.swift */; };
 		C86D1D381E29D49200FE3D83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86D1D361E29D49200FE3D83 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		C86D1D3D1E29D49200FE3D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86D1D3B1E29D49200FE3D83 /* LaunchScreen.storyboard */; };
 		C86D1D481E29D49200FE3D83 /* emotional_index_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D471E29D49200FE3D83 /* emotional_index_iOSTests.swift */; };
 		C86D1D531E29D49300FE3D83 /* emotional_index_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D521E29D49300FE3D83 /* emotional_index_iOSUITests.swift */; };
+		DE0D30B3F93B19A36C6444F1 /* Pods_emotional_index_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emotional_index_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5C7BD0528C033BE7B7FAF20B /* Pods-emotional-index-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		684FC48CFBE6C9379BBB226A /* libPods-emotional-index-iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-emotional-index-iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AF0A60273A19AB0A0EEDFC9 /* Pods-emotional-index-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C86D1D2F1E29D49100FE3D83 /* emotional-index-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "emotional-index-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86D1D321E29D49100FE3D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C86D1D341E29D49100FE3D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,10 @@
 		C86D1D4E1E29D49300FE3D83 /* emotional-index-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emotional-index-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86D1D521E29D49300FE3D83 /* emotional_index_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotional_index_iOSUITests.swift; sourceTree = "<group>"; };
 		C86D1D541E29D49300FE3D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D719105AC998F0E939EDC527 /* Pods-emotional-index-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC5D916F38B286DEE351932E /* Pods-emotional-index-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2CA91FE510B8A48EEA15FC5 /* Pods-emotional-index-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F495F16703CF6AE386906436 /* libPods-emotional-index-iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-emotional-index-iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE0D30B3F93B19A36C6444F1 /* Pods_emotional_index_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C671167050ECA16D1A4DB89 /* libPods-emotional-index-iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38364DA34A276CE71C2A77AF /* libPods-emotional-index-iOSUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5A2613033E3A2562AC7F7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */,
+				7AF0A60273A19AB0A0EEDFC9 /* Pods-emotional-index-iOS.release.xcconfig */,
+				F2CA91FE510B8A48EEA15FC5 /* Pods-emotional-index-iOSTests.debug.xcconfig */,
+				5C7BD0528C033BE7B7FAF20B /* Pods-emotional-index-iOSTests.release.xcconfig */,
+				D719105AC998F0E939EDC527 /* Pods-emotional-index-iOSUITests.debug.xcconfig */,
+				EC5D916F38B286DEE351932E /* Pods-emotional-index-iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		62103119B3372C4EC8B3FF0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */,
+				F495F16703CF6AE386906436 /* libPods-emotional-index-iOSTests.a */,
+				684FC48CFBE6C9379BBB226A /* libPods-emotional-index-iOSUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C86D1D261E29D49000FE3D83 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				C86D1D461E29D49200FE3D83 /* emotional-index-iOSTests */,
 				C86D1D511E29D49300FE3D83 /* emotional-index-iOSUITests */,
 				C86D1D301E29D49100FE3D83 /* Products */,
+				1C5A2613033E3A2562AC7F7B /* Pods */,
+				62103119B3372C4EC8B3FF0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C86D1D571E29D49300FE3D83 /* Build configuration list for PBXNativeTarget "emotional-index-iOS" */;
 			buildPhases = (
+				83AAD93B4E74D4E54D6DF08E /* [CP] Check Pods Manifest.lock */,
 				C86D1D2B1E29D49000FE3D83 /* Sources */,
 				C86D1D2C1E29D49000FE3D83 /* Frameworks */,
 				C86D1D2D1E29D49000FE3D83 /* Resources */,
+				292FAA3278A7EC2441B7A808 /* [CP] Embed Pods Frameworks */,
+				073AE95B9061BBC4057D9F95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C86D1D5A1E29D49300FE3D83 /* Build configuration list for PBXNativeTarget "emotional-index-iOSTests" */;
 			buildPhases = (
+				3FB636E48D1B8AF12D1CC0B3 /* [CP] Check Pods Manifest.lock */,
 				C86D1D3F1E29D49200FE3D83 /* Sources */,
 				C86D1D401E29D49200FE3D83 /* Frameworks */,
 				C86D1D411E29D49200FE3D83 /* Resources */,
+				82F401544374BEB47B2FD634 /* [CP] Embed Pods Frameworks */,
+				43E0C9E6CADBF4D78820E99D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C86D1D5D1E29D49300FE3D83 /* Build configuration list for PBXNativeTarget "emotional-index-iOSUITests" */;
 			buildPhases = (
+				0F03BB78E8716B568C383F34 /* [CP] Check Pods Manifest.lock */,
 				C86D1D4A1E29D49300FE3D83 /* Sources */,
 				C86D1D4B1E29D49300FE3D83 /* Frameworks */,
 				C86D1D4C1E29D49300FE3D83 /* Resources */,
+				7901CD5DF9FC3CAC1654F338 /* [CP] Embed Pods Frameworks */,
+				DF874410AE729EEDAC219451 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		073AE95B9061BBC4057D9F95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F03BB78E8716B568C383F34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		292FAA3278A7EC2441B7A808 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FB636E48D1B8AF12D1CC0B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43E0C9E6CADBF4D78820E99D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7901CD5DF9FC3CAC1654F338 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82F401544374BEB47B2FD634 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83AAD93B4E74D4E54D6DF08E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF874410AE729EEDAC219451 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C86D1D2B1E29D49000FE3D83 /* Sources */ = {
@@ -411,6 +598,7 @@
 		};
 		C86D1D581E29D49300FE3D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
@@ -424,6 +612,7 @@
 		};
 		C86D1D591E29D49300FE3D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AF0A60273A19AB0A0EEDFC9 /* Pods-emotional-index-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
@@ -437,6 +626,7 @@
 		};
 		C86D1D5B1E29D49300FE3D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2CA91FE510B8A48EEA15FC5 /* Pods-emotional-index-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +642,7 @@
 		};
 		C86D1D5C1E29D49300FE3D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C7BD0528C033BE7B7FAF20B /* Pods-emotional-index-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -467,6 +658,7 @@
 		};
 		C86D1D5E1E29D49300FE3D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D719105AC998F0E939EDC527 /* Pods-emotional-index-iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
@@ -481,6 +673,7 @@
 		};
 		C86D1D5F1E29D49300FE3D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC5D916F38B286DEE351932E /* Pods-emotional-index-iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 254LGM2EZ7;
