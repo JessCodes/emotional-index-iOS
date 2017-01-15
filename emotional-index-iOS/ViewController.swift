@@ -13,7 +13,10 @@ import SwiftyJSON
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let imagePicker = UIImagePickerController()
     let session = URLSession.shared
+    var url = "http://localhost:3000/youtube"
     
+
+   
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
