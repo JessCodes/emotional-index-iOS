@@ -10,8 +10,9 @@ import UIKit
 
 class YouTube: UIViewController {
 
-    @IBOutlet weak var videoView: UIWebView!
     
+    
+    @IBOutlet weak var videoView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

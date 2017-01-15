@@ -44,12 +44,12 @@
                                 <rect key="frame" x="177" y="290" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-66-gSC">
-                                <rect key="frame" x="263" y="219" width="84" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS2-XP-hNG">
+                                <rect key="frame" x="301" y="240" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="YouTube"/>
                                 <connections>
-                                    <segue destination="TLv-3D-yFy" kind="presentation" id="LqP-J1-Lka"/>
+                                    <segue destination="TLv-3D-yFy" kind="presentation" id="Pud-WB-ekA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,15 +86,32 @@
                                     <constraint firstAttribute="width" constant="240" id="Ms3-16-Of5"/>
                                 </constraints>
                             </webView>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NCF-4o-cLx">
+                                <rect key="frame" x="67" y="250" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7WQ-O5-BqG"/>
+                                    <constraint firstAttribute="width" constant="240" id="vV1-bc-Lj5"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-HA-FFu">
+                                <rect key="frame" x="166" y="60" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jcb-e9-NnD" firstAttribute="centerY" secondItem="h1d-zB-XF7" secondAttribute="centerY" id="Duz-03-wv7"/>
+                            <constraint firstItem="NCF-4o-cLx" firstAttribute="centerY" secondItem="h1d-zB-XF7" secondAttribute="centerY" id="lNU-Aj-4zP"/>
+                            <constraint firstItem="NCF-4o-cLx" firstAttribute="centerX" secondItem="h1d-zB-XF7" secondAttribute="centerX" id="w3R-ut-0Xw"/>
                             <constraint firstItem="Jcb-e9-NnD" firstAttribute="centerX" secondItem="h1d-zB-XF7" secondAttribute="centerX" id="ywE-lz-XUm"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="videoView" destination="Jcb-e9-NnD" id="TCv-7F-QJf"/>
+                        <outlet property="videoView" destination="NCF-4o-cLx" id="9LC-YL-wSw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Anr-Rg-13F" userLabel="First Responder" sceneMemberID="firstResponder"/>
