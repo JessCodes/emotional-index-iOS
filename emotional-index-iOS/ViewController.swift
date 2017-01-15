@@ -19,7 +19,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var faceResults: UITextView!
     
-    var googleAPIKey = "AIzaSyBqJDKODoj44KZSjK_rRFJkMJVHpG0vm_s"
+    let googleAPIKey = valueForAPIKey(named:"GEMO_KEY")
     var googleURL: URL {
         return URL(string: "https://vision.googleapis.com/v1/images:annotate?key=\(googleAPIKey)")!
     }
