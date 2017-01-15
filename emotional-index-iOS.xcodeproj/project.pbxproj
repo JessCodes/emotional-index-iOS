@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576F45A21E2B009D00A1C37F /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 576F45A11E2B009D00A1C37F /* ApiKeys.plist */; };
+		576F45A41E2B00DF00A1C37F /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F45A31E2B00DF00A1C37F /* ApiKeys.swift */; };
 		57BF04591E2A257400AD3537 /* JoyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF04581E2A257400AD3537 /* JoyModalViewController.swift */; };
 		7B2A8F331E2AE95E005E5DE2 /* YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8F321E2AE95E005E5DE2 /* YouTube.swift */; };
 		941C83F0EF336CB8D122FBB6 /* Pods_emotional_index_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E9685EBE3281A3D7A4D8DE /* Pods_emotional_index_iOSTests.framework */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emotional_index_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		576F45A11E2B009D00A1C37F /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
+		576F45A31E2B00DF00A1C37F /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		57BF04581E2A257400AD3537 /* JoyModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyModalViewController.swift; sourceTree = "<group>"; };
 		5C7BD0528C033BE7B7FAF20B /* Pods-emotional-index-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7AF0A60273A19AB0A0EEDFC9 /* Pods-emotional-index-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,11 +148,13 @@
 				C86D1D321E29D49100FE3D83 /* AppDelegate.swift */,
 				C86D1D341E29D49100FE3D83 /* ViewController.swift */,
 				C86D1D361E29D49200FE3D83 /* Main.storyboard */,
+				576F45A11E2B009D00A1C37F /* ApiKeys.plist */,
 				C86D1D391E29D49200FE3D83 /* Assets.xcassets */,
 				C86D1D3B1E29D49200FE3D83 /* LaunchScreen.storyboard */,
 				C86D1D3E1E29D49200FE3D83 /* Info.plist */,
 				57BF04581E2A257400AD3537 /* JoyModalViewController.swift */,
 				7B2A8F321E2AE95E005E5DE2 /* YouTube.swift */,
+				576F45A31E2B00DF00A1C37F /* ApiKeys.swift */,
 			);
 			path = "emotional-index-iOS";
 			sourceTree = "<group>";
@@ -291,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C86D1D3D1E29D49200FE3D83 /* LaunchScreen.storyboard in Resources */,
+				576F45A21E2B009D00A1C37F /* ApiKeys.plist in Resources */,
 				C86D1D3A1E29D49200FE3D83 /* Assets.xcassets in Resources */,
 				C86D1D381E29D49200FE3D83 /* Main.storyboard in Resources */,
 			);
@@ -458,6 +465,7 @@
 				57BF04591E2A257400AD3537 /* JoyModalViewController.swift in Sources */,
 				7B2A8F331E2AE95E005E5DE2 /* YouTube.swift in Sources */,
 				C86D1D351E29D49100FE3D83 /* ViewController.swift in Sources */,
+				576F45A41E2B00DF00A1C37F /* ApiKeys.swift in Sources */,
 				C86D1D331E29D49100FE3D83 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
