@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SwiftyJSON
+import KeychainAccess
 
 
 class login: UIViewController {
@@ -52,25 +53,25 @@ class login: UIViewController {
             // Print out response string
             let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             print("responseString = \(responseString)")
+            
+            // Setting session from API backend
             self.confirmLogin = responseString as! String
+            let keychain = Keychain()
+            try! keychain.set(self.confirmLogin, key: "user")
+            print(keychain["user"])
             
-            //            print(self.video)
             
-            // Convert server json response to NSDictionary
-            //            do {
-            //                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-            //
-            //                    // Print out dictionary
-            //                    print(convertedJsonIntoDict)
-            //
-            ////                    // Get value by key
-            //                    let firstNameValue = convertedJsonIntoDict["userName"] as? String
-            //                    print(firstNameValue!)
-            //
-            //                }
-            //            } catch let error as NSError {
-            //                print(error.localizedDescription)
-            //            }
+//            @IBAction func saveAction(sender: UIBarButtonItem) {
+//                let keychain: Keychain
+//                if let service = serviceField.text, !service.isEmpty {
+//                    keychain = Keychain(service: service)
+//                } else {
+//                    keychain = Keychain()
+//                }
+//                keychain[usernameField.text!] = passwordField.text
+//                
+//                dismiss(animated: true, completion: nil)
+//            }
             
         }
         
