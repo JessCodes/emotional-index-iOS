@@ -72,8 +72,8 @@ class YouTube: UIViewController {
         print(video)
         videoView.allowsInlineMediaPlayback = true
         
-//        let scriptUrl = "https://emotemetoo.herokuapp.com/youtube"
-        let scriptUrl = "http://localhost:3000/youtube"
+        let scriptUrl = "https://emotemetoo.herokuapp.com/youtube"
+//        let scriptUrl = "http://localhost:3000/youtube"
         
         
         // Add one parameter
