@@ -23,7 +23,7 @@ class login: UIViewController {
         
         
 //       let scriptUrl = "https://emotemetoo.herokuapp.com/youtube"
-         let scriptUrl = "http://localhost:3000/swift_login"
+         let scriptUrl = "http://localhost:3000/login_swift"
      
         
         // Add one parameter
