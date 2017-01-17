@@ -24,8 +24,8 @@ class Giphy: UIViewController {
         print(gif)
 //        viewGiph.allowsInlineMediaPlayback = true
         
-        //        let scriptUrl = "https://emotemetoo.herokuapp.com/giphy"
-        let scriptUrl = "http://localhost:3000/giphy"
+                let scriptUrl = "https://emotemetoo.herokuapp.com/giphy"
+//        let scriptUrl = "http://localhost:3000/giphy"
         
         
         // Add one parameter
