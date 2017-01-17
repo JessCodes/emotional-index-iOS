@@ -9,6 +9,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Giphy-->
+        <scene sceneID="8mU-JI-5zN">
+            <objects>
+                <viewController id="I8g-9y-dDo" customClass="Giphy" customModule="emotional_index_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q5U-wV-gav"/>
+                        <viewControllerLayoutGuide type="bottom" id="6vn-S8-ACH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="98L-Gc-27e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Giphy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnh-QA-oir">
+                                <rect key="frame" x="88" y="49" width="219" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qX4-La-XaG">
+                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1Dj-sY-abf"/>
+                                    <constraint firstAttribute="height" constant="128" id="SUV-Sy-Pgu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qX4-La-XaG" firstAttribute="centerY" secondItem="98L-Gc-27e" secondAttribute="centerY" id="YIY-MJ-Exb"/>
+                            <constraint firstItem="qX4-La-XaG" firstAttribute="centerX" secondItem="98L-Gc-27e" secondAttribute="centerX" id="gUT-ZC-gFl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewGiph" destination="qX4-La-XaG" id="ntE-ls-4FK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swm-Vd-F7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="208.80000000000001" y="-540.17991004497753"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -45,11 +86,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rS2-XP-hNG">
-                                <rect key="frame" x="301" y="240" width="46" height="30"/>
+                                <rect key="frame" x="48" y="565" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="YouTube"/>
                                 <connections>
                                     <segue destination="TLv-3D-yFy" kind="presentation" id="Pud-WB-ekA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yd-cR-5Jc">
+                                <rect key="frame" x="217" y="565" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Giphy"/>
+                                <connections>
+                                    <segue destination="I8g-9y-dDo" kind="presentation" id="ghP-YC-mAY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="405.60000000000002" y="126.38680659670166"/>
+            <point key="canvasLocation" x="-345" y="125"/>
         </scene>
         <!--You Tube-->
         <scene sceneID="Sod-PU-oIa">
@@ -116,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Anr-Rg-13F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="125.4872563718141"/>
+            <point key="canvasLocation" x="598" y="125"/>
         </scene>
     </scenes>
 </document>

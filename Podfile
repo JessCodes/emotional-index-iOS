@@ -7,6 +7,7 @@ target 'emotional-index-iOS' do
   # Pods for emotional-index-iOS
   pod 'Alamofire', '~> 4.0'
   pod 'SwiftyJSON', '~> 3.1'
+  pod 'SwiftGifOrigin', '~> 1.6.1'
 
   target 'emotional-index-iOSTests' do
     inherit! :search_paths
