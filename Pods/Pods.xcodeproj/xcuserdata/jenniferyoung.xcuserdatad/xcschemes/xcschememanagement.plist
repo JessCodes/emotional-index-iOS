@@ -8,31 +8,56 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-emotional-index-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Pods-emotional-index-iOSTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>Pods-emotional-index-iOSUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>SwiftGifOrigin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>1C27F69526FBCC317C8708C295E58003</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5F28D513095A3558C674B1B133105DA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E5EB5D4BEB672270B51A535245B41EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>A9E1F84D326E2E314427FF2F1336DA6D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA4292728C4EA4373F518602DFDD7395</key>
 		<dict>
 			<key>primary</key>
 			<true/>
