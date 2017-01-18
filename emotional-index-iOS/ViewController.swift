@@ -26,6 +26,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return URL(string: "https://vision.googleapis.com/v1/images:annotate?key=\(googleAPIKey)")!
     }
     
+  @IBAction func twilio(_ sender: Any) {
+    
+  }
+  
     @IBAction func loadImageButtonTapped(_ sender: UIButton) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
