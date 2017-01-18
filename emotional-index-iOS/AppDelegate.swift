@@ -62,6 +62,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Print the error to console (you should alert the user that registration failed)
         print("APNs registration failed: \(error)")
     }
-
+    //Push notification recieved
+    func application(_application: UIApplication, didReceiveRemoteNotification data: [AnyHashable : Any]) {
+        //Print notification payload
+        print("Push notification recieved: \(data)")
+    }
 }
 
