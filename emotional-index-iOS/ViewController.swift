@@ -126,7 +126,6 @@ extension ViewController {
                 } else {
                     self.faceResults.text = "No faces found"
                 }
-                
             }
         })
         
