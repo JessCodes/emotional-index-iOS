@@ -24,8 +24,8 @@ class login: UIViewController {
        let emailText = email.text!
         
         
-       let scriptUrl = "https://emotemetoo.herokuapp.com/login_swift"
-//         let scriptUrl = "http://localhost:3000/login_swift"
+//       let scriptUrl = "https://emotemetoo.herokuapp.com/login_swift"
+         let scriptUrl = "http://localhost:3000/login_swift"
      
         
         // Add one parameter
