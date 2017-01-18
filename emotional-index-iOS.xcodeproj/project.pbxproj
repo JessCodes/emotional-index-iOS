@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04E8503F1E2E0A24001A5053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E8503E1E2E0A24001A5053 /* Images.xcassets */; };
-		57431E231E2F3A84001D7831 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57431E221E2F3A84001D7831 /* ApiKeys.plist */; };
 		576F45A41E2B00DF00A1C37F /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F45A31E2B00DF00A1C37F /* ApiKeys.swift */; };
 		57BF04591E2A257400AD3537 /* JoyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF04581E2A257400AD3537 /* JoyModalViewController.swift */; };
 		7B2A8F331E2AE95E005E5DE2 /* YouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A8F321E2AE95E005E5DE2 /* YouTube.swift */; };
@@ -23,6 +22,7 @@
 		C86D1D3D1E29D49200FE3D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86D1D3B1E29D49200FE3D83 /* LaunchScreen.storyboard */; };
 		C86D1D481E29D49200FE3D83 /* emotional_index_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D471E29D49200FE3D83 /* emotional_index_iOSTests.swift */; };
 		C86D1D531E29D49300FE3D83 /* emotional_index_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86D1D521E29D49300FE3D83 /* emotional_index_iOSUITests.swift */; };
+		C8CE1D8B1E2FD9AA0012EA03 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8CE1D8A1E2FD9AA0012EA03 /* ApiKeys.plist */; };
 		DE0D30B3F93B19A36C6444F1 /* Pods_emotional_index_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 		04E8503E1E2E0A24001A5053 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emotional_index_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		57431E221E2F3A84001D7831 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		576F45A31E2B00DF00A1C37F /* ApiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		57BF04581E2A257400AD3537 /* JoyModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoyModalViewController.swift; sourceTree = "<group>"; };
 		5C7BD0528C033BE7B7FAF20B /* Pods-emotional-index-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSTests/Pods-emotional-index-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		C86D1D4E1E29D49300FE3D83 /* emotional-index-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "emotional-index-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C86D1D521E29D49300FE3D83 /* emotional_index_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emotional_index_iOSUITests.swift; sourceTree = "<group>"; };
 		C86D1D541E29D49300FE3D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8CE1D8A1E2FD9AA0012EA03 /* ApiKeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		D6E9685EBE3281A3D7A4D8DE /* Pods_emotional_index_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emotional_index_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D719105AC998F0E939EDC527 /* Pods-emotional-index-iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC5D916F38B286DEE351932E /* Pods-emotional-index-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOSUITests/Pods-emotional-index-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				7BE6FDD21E2D851200DBF422 /* giphy.swift */,
 				04E8503E1E2E0A24001A5053 /* Images.xcassets */,
 				7BE6FDD61E2E916900DBF422 /* login.swift */,
-				57431E221E2F3A84001D7831 /* ApiKeys.plist */,
+				C8CE1D8A1E2FD9AA0012EA03 /* ApiKeys.plist */,
 			);
 			path = "emotional-index-iOS";
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				04E8503F1E2E0A24001A5053 /* Images.xcassets in Resources */,
 				C86D1D3A1E29D49200FE3D83 /* Assets.xcassets in Resources */,
 				C86D1D381E29D49200FE3D83 /* Main.storyboard in Resources */,
-				57431E231E2F3A84001D7831 /* ApiKeys.plist in Resources */,
+				C8CE1D8B1E2FD9AA0012EA03 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
