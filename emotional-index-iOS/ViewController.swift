@@ -94,28 +94,117 @@ extension ViewController {
                         }
                         
                     }
-                
+                    let scriptUrl = "http://localhost:3000/gemo"
+                    let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+
                     for (emotion, total) in emotionTotals {
                         if total == emotionTotals.values.max()
                         {
                             if emotion == "joy" {
-                                
                                 self.faceResults.text! = "you look like you're feeling joy"
-                                let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
-                                print("keychain user below **********************************")
-                                print(keychain[string: "user"])
+
+                                let urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                let myUrl = NSURL(string: urlWithParams);
+                                let request = NSMutableURLRequest(url:myUrl as! URL);
+
+                                request.httpMethod = "GET"
+                               
+                                let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                }
+                            task.resume()
+
                             }
                             else if emotion == "anger"
                             {
                                 self.faceResults.text! = "you look like you're feeling angry"
+                                
+                                let urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                let myUrl = NSURL(string: urlWithParams);
+                                let request = NSMutableURLRequest(url:myUrl as! URL);
+                                
+                                request.httpMethod = "GET"
+                                
+                                let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                }
+                                task.resume()
                             }
                             else if emotion == "surprise"
                             {
                                 self.faceResults.text! = "you look surprised!"
+                                
+                                
+                                let urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                let myUrl = NSURL(string: urlWithParams);
+                                let request = NSMutableURLRequest(url:myUrl as! URL);
+                                
+                                request.httpMethod = "GET"
+                                
+                                let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                }
+                                task.resume()
                             }
                             else if emotion == "sorrow"
                             {
                                 self.faceResults.text! = "you look like you're feeling sorrow"
+                                
+                                
+                                let urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                let myUrl = NSURL(string: urlWithParams);
+                                let request = NSMutableURLRequest(url:myUrl as! URL);
+                                
+                                request.httpMethod = "GET"
+                                
+                                let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                }
+                                task.resume()
                             }
                             else {
                                 self.faceResults.text! = "something went wrong"
