@@ -26,13 +26,53 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         return URL(string: "https://vision.googleapis.com/v1/images:annotate?key=\(googleAPIKey)")!
     }
     
+  @IBAction func twilio(_ sender: Any) {
+//    let scriptUrl = "https://emotemetoo.herokuapp.com/twilio"
+      let scriptUrl = "http://localhost:3000/twilio"
+    
+      let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+      let twilioText = keychain[string: "user"]!
+    
+    // Add one parameter
+    let urlWithParams = scriptUrl + "?id=\(twilioText)"
+    
+    // Create NSURL Ibject
+    let myUrl = NSURL(string: urlWithParams);
+    
+    // Creaste URL Request
+    let request = NSMutableURLRequest(url:myUrl as! URL);
+    
+    // Set request HTTP method to GET. It could be POST as well
+    request.httpMethod = "GET"
+    
+    // Excute HTTP Request
+    let task = URLSession.shared.dataTask(with: request as URLRequest) {
+      data, response, error in
+      
+      // Check for error
+      if error != nil
+      {
+        print("error=\(error)")
+        return
+      }
+      
+      // Print out response string
+      let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+      print("responseString = \(responseString)")
+
+    }
+    
+    task.resume()
+
+  }
+
     @IBAction func loadImageButtonTapped(_ sender: UIButton) {
         imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
-        
+      
         present(imagePicker, animated: true, completion: nil)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -152,7 +192,6 @@ extension ViewController {
                                     var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                                     print("responseString = \(responseString)")
                                     
-                                    print(keychain[string: "user"]!)
                                 }
                                 task.resume()
 
@@ -181,7 +220,6 @@ extension ViewController {
                                     var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                                     print("responseString = \(responseString)")
                                     
-                                    print(keychain[string: "user"]!)
                                 }
                                 task.resume()
 
@@ -189,6 +227,30 @@ extension ViewController {
                             else if emotion == "sorrow"
                             {
                                 self.faceResults.text! = "you look like you're feeling sorrow"
+                                
+                                var urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                var myUrl = NSURL(string: urlWithParams);
+                                var request = NSMutableURLRequest(url:myUrl as! URL);
+                                
+                                request.httpMethod = "GET"
+                                
+                                var task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                    
+                                }
+                                task.resume()
+                                
                             }
                             else {
                                 self.faceResults.text! = "something went wrong"

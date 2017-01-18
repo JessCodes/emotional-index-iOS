@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6E5EB5D4BEB672270B51A535245B41EC"
+               BlueprintIdentifier = "9475C876B75D46A3E6E39E8FCBD662C4"
                BuildableName = "Pods_emotional_index_iOS.framework"
                BlueprintName = "Pods-emotional-index-iOS"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6E5EB5D4BEB672270B51A535245B41EC"
+            BlueprintIdentifier = "9475C876B75D46A3E6E39E8FCBD662C4"
             BuildableName = "Pods_emotional_index_iOS.framework"
             BlueprintName = "Pods-emotional-index-iOS"
             ReferencedContainer = "container:Pods.xcodeproj">
