@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Alamofire
 import SwiftGifOrigin
+import KeychainAccess
 
 
 class Giphy: UIViewController {
@@ -24,12 +25,16 @@ class Giphy: UIViewController {
         print(gif)
 //        viewGiph.allowsInlineMediaPlayback = true
         
-                let scriptUrl = "https://emotemetoo.herokuapp.com/giphy"
-//        let scriptUrl = "http://localhost:3000/giphy"
-        
-        
-        // Add one parameter
-        let urlWithParams = scriptUrl
+//      let scriptUrl = "https://emotemetoo.herokuapp.com/giphy"
+        let scriptUrl = "http://localhost:3000/giphy"
+
+  
+      let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+      let giphyUser = keychain[string: "user"]!
+      
+      // Add one parameter
+      let urlWithParams = scriptUrl + "?id=\(giphyUser)"
+    
         // Create NSURL Ibject
         let myUrl = NSURL(string: urlWithParams);
         

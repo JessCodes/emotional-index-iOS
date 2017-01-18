@@ -59,9 +59,10 @@ class login: UIViewController {
             
             let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
             keychain["user"] = self.confirmLogin
-            
-//            print("keychain user below **********************************")
-//            print(keychain[string: "user"]!)
+          
+//          if (keychain[string: "user"]! != Int:){
+//            func reload() -> login
+//          }
         }
         
         task.resume()
