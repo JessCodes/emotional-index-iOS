@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C7519F1E2FF715000346FB /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C7519E1E2FF715000346FB /* UserNotifications.framework */; };
 		04E8503F1E2E0A24001A5053 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E8503E1E2E0A24001A5053 /* Images.xcassets */; };
 		576F45A41E2B00DF00A1C37F /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576F45A31E2B00DF00A1C37F /* ApiKeys.swift */; };
 		57BF04591E2A257400AD3537 /* JoyModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BF04581E2A257400AD3537 /* JoyModalViewController.swift */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C7519D1E2FE123000346FB /* emotional-index-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "emotional-index-iOS.entitlements"; sourceTree = "<group>"; };
+		04C7519E1E2FF715000346FB /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		04E8503E1E2E0A24001A5053 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emotional_index_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		292CE3AF53AAE29697B004D4 /* Pods-emotional-index-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emotional-index-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emotional-index-iOS/Pods-emotional-index-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C7519F1E2FF715000346FB /* UserNotifications.framework in Frameworks */,
 				DE0D30B3F93B19A36C6444F1 /* Pods_emotional_index_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,6 +123,7 @@
 		62103119B3372C4EC8B3FF0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04C7519E1E2FF715000346FB /* UserNotifications.framework */,
 				24239D96D89A51CE371ABA15 /* Pods_emotional_index_iOS.framework */,
 				D6E9685EBE3281A3D7A4D8DE /* Pods_emotional_index_iOSTests.framework */,
 				A755458BCE2808489A7E502F /* Pods_emotional_index_iOSUITests.framework */,
@@ -151,6 +156,7 @@
 		C86D1D311E29D49100FE3D83 /* emotional-index-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				04C7519D1E2FE123000346FB /* emotional-index-iOS.entitlements */,
 				C86D1D321E29D49100FE3D83 /* AppDelegate.swift */,
 				C86D1D341E29D49100FE3D83 /* ViewController.swift */,
 				C86D1D391E29D49200FE3D83 /* Assets.xcassets */,
@@ -265,6 +271,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = UM82D7D5C8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					C86D1D421E29D49200FE3D83 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -554,9 +565,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = UM82D7D5C8;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -576,6 +589,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4f07fda5-5c03-4cb3-89a3-74aaa3fd8064";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -606,6 +620,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = UM82D7D5C8;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -630,11 +645,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "emotional-index-iOS/emotional-index-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kathryn Trant (W4S75M8FB4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = UM82D7D5C8;
 				INFOPLIST_FILE = "emotional-index-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tokatlys-tantilizers.emotional-index-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f07fda5-5c03-4cb3-89a3-74aaa3fd8064";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -645,11 +664,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "emotional-index-iOS/emotional-index-iOS.entitlements";
 				DEVELOPMENT_TEAM = UM82D7D5C8;
 				INFOPLIST_FILE = "emotional-index-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tokatlys-tantilizers.emotional-index-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4f07fda5-5c03-4cb3-89a3-74aaa3fd8064";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
