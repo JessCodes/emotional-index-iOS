@@ -94,7 +94,7 @@ extension ViewController {
                         }
                         
                     }
-                    let scriptUrl = "http://localhost:3000/gemo"
+                    let scriptUrl = "https://emotemetoo.herokuapp.com/gemo"
                     let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
 
                     for (emotion, total) in emotionTotals {
