@@ -56,9 +56,22 @@ class login: UIViewController {
             
             // Setting session from API backend
             self.confirmLogin = responseString as! String
-            let keychain = Keychain()
-            try! keychain.set(self.confirmLogin, key: "user")
-            print(keychain["user"])
+
+//            print("self.confirmLogin below **********************************")
+//            print(self.confirmLogin)
+            
+            let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+            keychain["user"] = self.confirmLogin
+//            try! keychain.set(self.confirmLogin, key: "user")
+            
+//            print(" keychain[user] **********************************")
+//            print(keychain["user"]?.hashValue)
+            
+//            print(" keychain below **********************************")
+//            print(keychain)
+            
+            print("keychain user below **********************************")
+            print(keychain[string: "user"])
             
             
 //            @IBAction func saveAction(sender: UIBarButtonItem) {

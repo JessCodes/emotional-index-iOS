@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import KeychainAccess
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let imagePicker = UIImagePickerController()
@@ -100,7 +101,9 @@ extension ViewController {
                             if emotion == "joy" {
                                 
                                 self.faceResults.text! = "you look like you're feeling joy"
-                                
+                                let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+                                print("keychain user below **********************************")
+                                print(keychain[string: "user"])
                             }
                             else if emotion == "anger"
                             {
