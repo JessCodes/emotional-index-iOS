@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SwiftyJSON
+import KeychainAccess
 
 
 class login: UIViewController {
@@ -23,7 +24,7 @@ class login: UIViewController {
        let emailText = email.text!
         
         
-//       let scriptUrl = "https://emotemetoo.herokuapp.com/youtube"
+//       let scriptUrl = "https://emotemetoo.herokuapp.com/login_swift"
          let scriptUrl = "http://localhost:3000/login_swift"
      
         
@@ -52,26 +53,15 @@ class login: UIViewController {
             // Print out response string
             let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
             print("responseString = \(responseString)")
+            
+            // Setting session from API backend
             self.confirmLogin = responseString as! String
             
-            //            print(self.video)
+            let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
+            keychain["user"] = self.confirmLogin
             
-            // Convert server json response to NSDictionary
-            //            do {
-            //                if let convertedJsonIntoDict = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-            //
-            //                    // Print out dictionary
-            //                    print(convertedJsonIntoDict)
-            //
-            ////                    // Get value by key
-            //                    let firstNameValue = convertedJsonIntoDict["userName"] as? String
-            //                    print(firstNameValue!)
-            //
-            //                }
-            //            } catch let error as NSError {
-            //                print(error.localizedDescription)
-            //            }
-            
+//            print("keychain user below **********************************")
+//            print(keychain[string: "user"]!)
         }
         
         task.resume()
