@@ -152,7 +152,6 @@ extension ViewController {
                                     var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                                     print("responseString = \(responseString)")
                                     
-                                    print(keychain[string: "user"]!)
                                 }
                                 task.resume()
 
@@ -181,7 +180,6 @@ extension ViewController {
                                     var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
                                     print("responseString = \(responseString)")
                                     
-                                    print(keychain[string: "user"]!)
                                 }
                                 task.resume()
 
@@ -189,6 +187,30 @@ extension ViewController {
                             else if emotion == "sorrow"
                             {
                                 self.faceResults.text! = "you look like you're feeling sorrow"
+                                
+                                var urlWithParams = scriptUrl + "?id=\(keychain[string: "user"]!)&emotion=\(emotion)"
+                                var myUrl = NSURL(string: urlWithParams);
+                                var request = NSMutableURLRequest(url:myUrl as! URL);
+                                
+                                request.httpMethod = "GET"
+                                
+                                var task = URLSession.shared.dataTask(with: request as URLRequest) {
+                                    data, response, error in
+                                    
+                                    // Check for error
+                                    if error != nil
+                                    {
+                                        print("error=\(error)")
+                                        return
+                                    }
+                                    
+                                    // Print out response string
+                                    var responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+                                    print("responseString = \(responseString)")
+                                    
+                                }
+                                task.resume()
+                                
                             }
                             else {
                                 self.faceResults.text! = "something went wrong"
