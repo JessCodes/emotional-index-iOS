@@ -24,7 +24,7 @@ class login: UIViewController {
        let emailText = email.text!
         
         
-//       let scriptUrl = "https://emotemetoo.herokuapp.com/youtube"
+//       let scriptUrl = "https://emotemetoo.herokuapp.com/login_swift"
          let scriptUrl = "http://localhost:3000/login_swift"
      
         
@@ -56,36 +56,12 @@ class login: UIViewController {
             
             // Setting session from API backend
             self.confirmLogin = responseString as! String
-
-//            print("self.confirmLogin below **********************************")
-//            print(self.confirmLogin)
             
             let keychain = Keychain(service: "com.tokatlys-tantilizers.emotional-index-iOS")
             keychain["user"] = self.confirmLogin
-//            try! keychain.set(self.confirmLogin, key: "user")
             
-//            print(" keychain[user] **********************************")
-//            print(keychain["user"]?.hashValue)
-            
-//            print(" keychain below **********************************")
-//            print(keychain)
-            
-            print("keychain user below **********************************")
-            print(keychain[string: "user"])
-            
-            
-//            @IBAction func saveAction(sender: UIBarButtonItem) {
-//                let keychain: Keychain
-//                if let service = serviceField.text, !service.isEmpty {
-//                    keychain = Keychain(service: service)
-//                } else {
-//                    keychain = Keychain()
-//                }
-//                keychain[usernameField.text!] = passwordField.text
-//                
-//                dismiss(animated: true, completion: nil)
-//            }
-            
+//            print("keychain user below **********************************")
+//            print(keychain[string: "user"]!)
         }
         
         task.resume()
