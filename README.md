@@ -1,5 +1,9 @@
+![Alt Text](http://emotemetoo.herokuapp.com/assets/logo-68c5824acfa7835dda37e0753f7d85a19a2268200193c091f28141d7a26d17a4.png)
+
 # Emote Me
 Emote Me iOS is the companion to the [Ruby on Rails web app](https://github.com/JessCodes/emotional-index) built using Swift.  This app looks at a photo of the user and analyzes the user's emotions. Based on the emotion and user preferences, the app shows the user a YouTube video or gif or sends an inspiring text to improve the user's mood or keep the mood high.
+
+This decoupled app uses a Ruby on Rails backend API for user login and to save their emotion to the database.  The API is also used to parse the YouTube, Twilio, and Giphy data that is displayed to the user in the mobile app.
 
 ## Getting Started
 
